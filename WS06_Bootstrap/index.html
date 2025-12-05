@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JavaScript (place before closing </body> tag) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first HTML Page</title>
+
+
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <style>
+        h1 { color: rgb(102, 195, 244); }
+        h2 { color: rgb(102, 195, 244); }
+    </style>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navList = document.querySelector('.nav-list');
+
+            menuToggle.addEventListener('click', () => {
+                navList.classList.toggle('active');
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+<header>
+    <h1>My Website</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Menu</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#about">Harrastukseni</a>
+        </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Opintoni</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Yhteydenottopyynnöt</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="alert alert-warning" role="alert">
+      This is a warning alert—check it out!
+    </div>
+</header>
+
+
+<main>
+
+    <section>
+        <h2>Tervetuloa sivuilleni</h2>
+        <h3 style="color: rgb(254, 105, 237);">Kati Laakso</h3>
+
+        <p>Olen 23-vuotias ja asun Keravalla rescue-koirani kanssa. Opiskelen Laurean Ammattikorkeakoulussa.</p>
+
+        <blockquote class="quote">This is a sample quote.</blockquote>
+
+        <img src="images/minä.JPG" alt="Kuva minusta">
+        <img src="images/Kuura.jpg" alt="Koira" class="filter-image">
+    </section>
+
+
+    <section id="about">
+        <h3>Harrastukseni</h3>
+        <ul>
+            <li>Pilates</li>
+            <li>Koiran kanssa ulkoilu</li>
+            <li>Vesijuoksu</li>
+        </ul>
+        <button class="btn btn-danger">Click Me</button> 
+    </section>
+
+    <section id="portfolio" class="my-4">
+    <div class="d-flex justify-content-center">
+    <div class="card" style="width: 18rem;">
+      <img src="images/minä.JPG" class="card-img-top" alt="Card Image">
+      <div class="card-body">
+        <h5 class="card-title">Card Title</h5>
+        <p class="card-text">This is a simple card example using Bootstrap.</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+    <section id="services">
+        <h3>Opintoni tällä hetkellä</h3>
+        <table>
+            <tr><th>Kurssi</th><th>Op</th></tr>
+            <tr><td>Websivuston kehittäminen</td><td>5</td></tr>
+            <tr><td>Liiketoimintaympäristöt</td><td>5</td></tr>
+            <tr><td>Professional Communication in English</td><td>5</td></tr>
+        </table>
+
+        <a href="https://www.laurea.fi">Visit Laurea</a>
+    </section>
+
+
+    <section>
+        <ul class="pseudo-list">
+            <li>Item 1</li><li>Item 2</li><li>Item 3</li><li>Item 4</li>
+        </ul>
+
+        <button class="transition-button">Hover me</button>
+        <div class="animation-box"></div>
+
+        <div class="flex-container">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+        </div>
+
+        <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+
+        <section>
+            <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-12">Column 1</div>
+        <div class="col-md-4 col-12">Column 2</div>
+        <div class="col-md-4 col-12">Column 3</div>
+      </div>
+    </div>
+        </section>
+
+        <div class="responsive-box">Resize the window to see the effect</div>
+    </section>
+
+     <section>
+        <img src="images/Kuura.jpg" alt="Responsive Image" class="responsive-image">
+        <div class="media-query-box">Resize the window to see the effect</div>
+    </section>
+
+
+    <section id="contact">
+        <h3>Yhteydenottopyynnöt</h3>
+        <form>
+            <label for="name">Nimi:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Sähköposti:</label> 
+            <input type="email" id="email" name="email"><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+</main>
+
+
+<footer>
+    <p>Copyright 2025</p>
+</footer>
+
+</body>
+</html>
