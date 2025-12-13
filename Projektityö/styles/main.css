@@ -1,0 +1,115 @@
+ body{
+    background-color: rgb(235, 218, 198);
+ }
+ 
+ .navbar {
+            background-color: #43341e;
+            padding: 15px 30px;
+        }
+ .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+.navbar li {
+            margin-right: 20px;
+            flex: 1;
+            text-align: center;
+        }
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ceae83;
+}
+
+.navbar a.active {
+    color: #ceae83;
+}
+
+h1 {text-align: center;}
+p {text-align: center;}
+
+.hero {
+    background-image:url(../images/koira_etusivu.jpg) ;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px; 
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ceae83;
+    color: #43341e;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e1c196;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px; 
+    text-align: center;
+    font-size: 20px;
+}
+
+.site-header {
+    text-align: center;   
+    margin: 40px 0;      
+}
+
+.name {
+    font-family: 'Georgia', serif;  
+    font-size: 48px;        
+    font-weight: bold;
+    color: #43341e;    
+    margin-bottom: 10px;   
+}
+
+.tagline {
+    font-family: 'Arial', sans-serif;  
+    font-size: 20px; 
+    color: #555;                
+    font-style: italic;             
+}
