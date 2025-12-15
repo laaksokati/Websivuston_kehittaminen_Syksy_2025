@@ -6,7 +6,17 @@
     padding: 0;
     overflow-x: hidden;
 }
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px; 
+    text-align: center;
+    font-size: 20px;
+    color: #43341e;
+    font-family: Georgia, serif;
+}
  
+/* Navigaatiopalkki */
  .navbar {
             background-color: #43341e;
             padding: 15px 30px;
@@ -18,6 +28,8 @@
             margin: 0;
             padding: 0;
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 .navbar li {
             margin-right: 20px;
@@ -40,9 +52,28 @@
     color: #ceae83;
 }
 
-h1 {text-align: center;}
-p {text-align: center;}
+/* Etusivun otsikko */
+.site-header {
+    text-align: center;   
+    margin: 40px 0;      
+}
 
+.name {
+    font-family: 'Georgia', serif;  
+    font-size: 48px;        
+    font-weight: bold;
+    color: #43341e;    
+    margin-bottom: 10px;   
+}
+
+.tagline {
+    font-family: 'georgia', serif;  
+    font-size: 20px; 
+    color: #43341e;                
+    font-style: italic;             
+}
+
+/* Hero-osio */
 .hero {
     background-image:url(../images/koira_etusivu.jpg) ;
     background-size: cover;
@@ -66,6 +97,7 @@ p {text-align: center;}
     z-index: 1;
     max-width: 800px;
     margin: 0 auto;
+    font-family: 'georgia', serif;
 }
 
 .hero h1 {
@@ -93,35 +125,7 @@ p {text-align: center;}
     background-color: #e1c196;
 }
 
-.content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px; 
-    text-align: center;
-    font-size: 20px;
-    color: #43341e;
-}
-
-.site-header {
-    text-align: center;   
-    margin: 40px 0;      
-}
-
-.name {
-    font-family: 'Georgia', serif;  
-    font-size: 48px;        
-    font-weight: bold;
-    color: #43341e;    
-    margin-bottom: 10px;   
-}
-
-.tagline {
-    font-family: 'Arial', sans-serif;  
-    font-size: 20px; 
-    color: #555;                
-    font-style: italic;             
-}
-
+/* About Us Hero-osio */
 .hero2 {
     background-size: cover;
     background-position: center;
@@ -129,9 +133,10 @@ p {text-align: center;}
     text-align: center;
     padding: 120px 20px; 
     position: relative;
+    font-family: 'Georgia', serif;
 }
 .hero2::before {
-     content: "";
+    content: "";
     position: absolute;
     inset: 0;
     background-image: url(../images/kuura2.jpg);
@@ -167,6 +172,8 @@ p {text-align: center;}
     font-size: 20px;
     margin-bottom: 30px;
 }
+
+/* Where it all began -osio */
 .about-section {
     background-color: #f4f7f5; 
     padding: 60px 40px;  
@@ -176,6 +183,7 @@ p {text-align: center;}
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
+/* Arvot */
 .values-section {
     background-color: #f9f9f9;
     padding: 60px 20px;
@@ -202,7 +210,8 @@ p {text-align: center;}
     padding: 30px 20px;
     flex: 1 1 250px;
     max-width: 300px;
-    text-align: left;
+    text-align: center;
+    font-family: 'georgia', serif;
 }
 
 .value-card h3 {
@@ -218,13 +227,53 @@ p {text-align: center;}
     color: #6d5531;
 }
 
+/* Karuselli */
+.carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 10;
+}
+
+.carousel-btn.left {
+    left: 10px;
+}
+
+.carousel-btn.right {
+    right: 10px;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0,0,0,0.6);
+}
+
+/* Little Lovebugs kortit */
 .pennut {
     background-color: #f9f9f9;
     padding: 60px 20px;
     text-align: center;
 }
+.pennut h2 {
+    font-size: 40px;
+    color: #43341e;
+}
 .pentu-card {
-     flex: 0 0 300px;
+    flex: 0 0 300px;
     scroll-snap-align: start;
     background-color: rgb(227, 214, 199);
     border-radius: 12px;
@@ -255,9 +304,14 @@ p {text-align: center;}
     border-radius: 4px;
 }
 
+/* Young Soulmates kortit */
 .adult-dogs {
     text-align: center;
     padding: 40px 0;
+}
+.adult-dogs h2 {
+    font-size: 40px;
+    color: #43341e;
 }
 
 .adult-container {
@@ -293,44 +347,16 @@ p {text-align: center;}
     margin-bottom: 15px;
 }
 
-.carousel-wrapper {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
 
-
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.4);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    font-size: 20px;
-    z-index: 10;
-}
-
-.carousel-btn.left {
-    left: 10px;
-}
-
-.carousel-btn.right {
-    right: 10px;
-}
-
-.carousel-btn:hover {
-    background-color: rgba(0,0,0,0.6);
-}
-
+/* Senior Sweethearts kortit */
 .seniorit {
     background-color: #f9f9f9;
     padding: 60px 20px;
     text-align: center;
+}
+.seniorit h2 {
+    font-size: 40px;
+    color: #43341e;
 }
 .senior-container {
     display: flex;
@@ -365,6 +391,7 @@ p {text-align: center;}
     border-radius: 4px;
 }
 
+/* Sydämet korteisa */
 .gender-heart {
     width: 10px;
     height: 10px;
@@ -400,6 +427,24 @@ p {text-align: center;}
 .boy {
     background-color: #9ecbff; 
 }
+
+/*Adoptionappula */
+.cta-button2 {
+    display: inline-block;
+    background-color: #43341e;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 15px;
+}
+.cta-button2:hover {
+    background-color: #88755c;
+}
+
+/* Kysymykset ja vastaukset */
 .faq-section {
     max-width: 800px;
     margin: 80px auto;
@@ -409,7 +454,8 @@ p {text-align: center;}
 .faq-section h2 {
     text-align: center;
     margin-bottom: 40px;
-    color: #2f6f4e;
+    color: #43341e;
+    font-family: 'Georgia', serif;
 }
 
 .faq-item {
@@ -418,6 +464,7 @@ p {text-align: center;}
     margin-bottom: 15px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
     padding: 10px 20px;
+    text-align: center;
 }
 
 .faq-item summary {
@@ -428,6 +475,8 @@ p {text-align: center;}
     position: relative;
     padding: 15px 40px 15px 0;
     text-align: center;
+    color: #43341e;
+    font-family: 'georgia', serif;
 }
 
 .faq-item summary::-webkit-details-marker {
@@ -441,7 +490,7 @@ p {text-align: center;}
     top: 50%;
     transform: translateY(-50%);
     font-size: 22px;
-    color: #2f6f4e;
+    color: #43341e;
 }
 
 .faq-item[open] summary::after {
@@ -451,8 +500,10 @@ p {text-align: center;}
 .faq-item p {
     margin: 10px 0 20px;
     line-height: 1.6;
-    color: #444;
+    color: #43341e;
 }
+
+/* Adoptioprosessi */
 .process {
     background-color: #f9f9f9;
     padding: 50px 0px;
@@ -461,4 +512,272 @@ p {text-align: center;}
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+}
+
+/* Adoptiolomake */
+.adoption-form {
+  max-width: 700px;
+  margin: 100px auto;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.adoption-form h2 {
+  margin-bottom: 15px;
+  color: #43341e;
+  font-family: 'georgia', serif;
+}
+
+.adoption-form p {
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-family: 'georgia', serif;
+  color: #43341e;
+}
+
+.adoption-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.adoption-form label {
+  text-align: left;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'georgia', serif;
+  color: #43341e;
+}
+
+.adoption-form input,
+.adoption-form textarea,
+.adoption-form select {
+  margin-top: 6px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: 'georgia', serif;
+}
+
+.adoption-form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #43341e;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'georgia', serif;
+}
+
+.adoption-form button:hover {
+  background-color: #5a4a2f;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.contact-card {
+    flex: 0 0 300px;
+    scroll-snap-align: start;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+    font-family: 'georgia', serif;
+    color: #43341e;
+}
+/* Response-osio */
+.response {
+    background-color: #f9f9f9;
+    padding: 50px 0px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #baa889;
+  color: #f5f5f5;
+  padding: 25px 15px 10px;
+  margin-top: 100px;
+  font-family: 'georgia', serif;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.2);
+  margin-top: 40px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.footer-social-icons {
+  display: flex;  
+  gap: 15px;   
+  margin-top: 10px;
+  align-items: center;
+}
+
+.footer-social-icons a {
+  color: #f5f5f5;
+  font-size: 24px; 
+  transition: opacity 0.3s ease;
+  display: inline-block;
+}
+
+.footer-social-icons a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+/* Some ikonit */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.social-icons a {
+  color: #43341e;
+  font-size: 30px; 
+  transition: opacity 0.3s ease;
+  display: inline-block;
+}
+.social-icons a:hover {
+  opacity: 0.7;
+  text-decoration: none; 
+}
+
+/* Isompi tabletti / pienempi desktop */
+@media (max-width: 1024px) {
+    .hero, .hero2 {
+        padding: 100px 20px;
+    }
+    .hero h1, .hero2 h1 {
+        font-size: 36px;
+    }
+    .hero p, .hero2 p {
+        font-size: 18px;
+    }
+}
+
+/* Tabletti */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .navbar li {
+        margin-right: 0;
+        text-align: center;
+    }
+    .hero, .hero2 {
+        padding: 80px 20px;
+    }
+    .hero h1, .hero2 h1 {
+        font-size: 28px;
+    }
+    .hero p, .hero2 p {
+        font-size: 16px;
+    }
+    .content {
+        font-size: 18px;
+        padding: 15px;
+    }
+    .value-card, .pentu-card, .adult-card, .senior-card, .contact-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* Puhelin */
+@media (max-width: 480px) {
+    .hero, .hero2 {
+        padding: 60px 15px;
+    }
+    .hero h1, .hero2 h1 {
+        font-size: 24px;
+    }
+    .hero p, .hero2 p {
+        font-size: 14px;
+    }
+    .content {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .cta-button, .cta-button2 {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .social-icons, .footer-social-icons {
+        justify-content: center;
+    }
+    .gender-heart {
+        width: 8px;
+        height: 8px;
+    }
+    .gender-heart::before,
+    .gender-heart::after {
+        width: 8px;
+        height: 8px;
+    }
 }

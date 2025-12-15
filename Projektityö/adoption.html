@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Our Dogs</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
@@ -94,6 +95,104 @@
 
 </section>
 </main>
+
+
+<section class="adoption-form">
+  <h2>Adoption Application</h2>
+  <p>
+    Thank you for your interest in adoption. Please fill out the form below as
+    honestly as possible. Your answers help us find the best match for both you
+    and the dog.
+  </p>
+
+  <form>
+    <label>
+      Full name
+      <input type="text" name="name" required>
+    </label>
+
+    <label>
+      Email address
+      <input type="email" name="email" required>
+    </label>
+
+    <label>
+      Phone number
+      <input type="tel" name="phone">
+    </label>
+
+    <label>
+      City / Country
+      <input type="text" name="location">
+    </label>
+
+    <label>
+      Which dog are you interested in?
+      <input type="text" name="dog">
+    </label>
+
+    <label>
+      Have you had dogs before?
+      <select name="experience">
+        <option value="">Please choose</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </label>
+
+    <label>
+      Tell us about your lifestyle and home environment
+      <textarea name="home" rows="4"></textarea>
+    </label>
+
+    <label>
+      Why would you like to adopt a rescue dog?
+      <textarea name="motivation" rows="4"></textarea>
+    </label>
+
+    <button type="submit">Send Application</button>
+  </form>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    
+    <div class="footer-section">
+      <h4>Quick links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="adoption.html">Adoption</a></li>
+        <li><a href="dogs.html">Our Dogs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p>Second Chance Rescue ry</p>
+      <p>Email: contact@secondchance.com</p>
+      <p>Phone: +358 12 345 6789</p>
+      <p>Based in Finland</p>
+    </div>
+
+    <div class="footer-section">
+  <h4>Follow Us</h4>
+  <div class="footer-social-icons">
+    <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/login.php/?lang=fi" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.tiktok.com/" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+  </div>
+</div>
+
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Second Chance Rescue. All rights reserved.</p>
+  </div>
+</footer>
+
 
 </body>
 </html>
