@@ -294,7 +294,7 @@
     gap: 20px;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    padding: 20px, 0;
+    padding: 20px 0;
 }
 .pennut-container::-webkit-scrollbar {
     height: 8px;
@@ -320,7 +320,7 @@
     gap: 20px;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    padding: 20px, 0;
+    padding: 20px 0;
 }
 .adult-container::-webkit-scrollbar {
     height: 8px;
@@ -364,7 +364,7 @@
     gap: 20px;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    padding: 20px, 0;
+    padding: 20px 0;
 }
 .senior-card {
     flex: 0 0 300px;
